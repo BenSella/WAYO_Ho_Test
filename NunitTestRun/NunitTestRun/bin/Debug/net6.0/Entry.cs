@@ -58,6 +58,7 @@ namespace NunitTestRun
                 var qprivacyMassage = webDriver.FindElement(privacyMassage).Text;
                 if (qprivacyMassage.Equals("ודאי נודע לך על מדיניות הפרטיות."))
                 {
+
                    webDriver.FindElement(privacyAgreement).Click();// needed double click, the double click app didnt worked and this seemed the only way to activate the agreement button
                 }
             }

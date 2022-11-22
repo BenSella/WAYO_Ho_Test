@@ -44,7 +44,7 @@ namespace NunitTestRun
         {
             LogWriter.LogLine("Functunality Testing (TSighnIn) test is begining");
             LogWriter.LogLine("test ment for unrejisterd user");
-            if (entry.registration("גיורא", "שמואיד", "shigri@gmail.com", "Q1w2e3r4t5"))
+            if (entry.registration("שמיד", "שולץ", "dftry@gmail.com", "Q1w2e3r4t5"))
             {
                 LogWriter.LogLine("user is unrejistered, continue test");
                 products.productSearch();
