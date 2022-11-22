@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "7a157dea-548d-4944-92eb-68287b3228aa",
+		"name": "WAYO_Ben_Sella_Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17570141"
+	},
+	"item": [
+		{
+			"name": "VACCOVID - corona virus get all treatments data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-RapidAPI-Key",
+						"value": "dd809f52a2msh3a5580aa9756931p11d19djsnc740ffedcc53",
+						"type": "text"
+					},
+					{
+						"key": "X-RapidAPI-Host",
+						"value": "vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/npm-covid-data/",
+					"protocol": "https",
+					"host": [
+						"vaccovid-coronavirus-vaccine-and-treatment-tracker",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"npm-covid-data",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bionic Reading - convert",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "X-RapidAPI-Key",
+						"value": "dd809f52a2msh3a5580aa9756931p11d19djsnc740ffedcc53",
+						"type": "text"
+					},
+					{
+						"key": "X-RapidAPI-Host",
+						"value": "bionic-reading1.p.rapidapi.com",
+						"type": "text"
+					},
+					{
+						"key": "useQueryString",
+						"value": "true",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "response_type",
+							"value": "html",
+							"type": "text"
+						},
+						{
+							"key": "request_type",
+							"value": "html",
+							"type": "text"
+						},
+						{
+							"key": "fixation",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "saccade",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "ffdfdf",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://bionic-reading1.p.rapidapi.com/convert",
+					"protocol": "https",
+					"host": [
+						"bionic-reading1",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"convert"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
